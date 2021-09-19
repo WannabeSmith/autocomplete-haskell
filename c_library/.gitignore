@@ -2,6 +2,9 @@
 examples/trie_examples
 test/test_tries
 
+# Documentation
+html
+
 # Prerequisites
 *.d
 
