@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings, DeriveGeneric, DeriveAnyClass #-}
 {-|
 Module      : Tries
-Description : An autocomplete implementation along with functions for working with tries.
+Description : An autocomplete implementation along with functions for working with tries
 Copyright   : (c) Ian Waudby-Smith, 2019
 License     : BSD3
 Maintainer  : iwaudbysmith@gmail.com

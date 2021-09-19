@@ -1,4 +1,16 @@
 {-# LANGUAGE ForeignFunctionInterface #-}
+{-|
+Module      : CTries
+Description : Foreign function interface of Tries built for C
+Copyright   : (c) Ian Waudby-Smith, 2019
+License     : BSD3
+Maintainer  : iwaudbysmith@gmail.com
+Stability   : experimental
+Portability : POSIX
+
+This module provides the foreign function interface of Tries.hs so that they can be called by C.
+-}
+
 
 module CTries where
 
