@@ -236,10 +236,10 @@ t
     it "throws an error when the weight is malformed" $ do
       evaluate (textToWtdWord $ Text.pack "    3point5\tsome word") `shouldThrow` errorCall "Malformed weighted word:     3point5\tsome word"
 
-  myFileTrie1 <- runIO $ readTerms "/Data/mytrie1.txt"
-  myFileTrie2 <- runIO $ readTerms "/Data/mytrie2.txt"
-  myFileTrie3 <- runIO $ readTerms "/Data/mytrie3.txt"
-  myFileTrie4 <- runIO $ readTerms "/Data/mytrie4.txt"
+  myFileTrie1 <- runIO $ readTerms "Data/mytrie1.txt"
+  myFileTrie2 <- runIO $ readTerms "Data/mytrie2.txt"
+  myFileTrie3 <- runIO $ readTerms "Data/mytrie3.txt"
+  myFileTrie4 <- runIO $ readTerms "Data/mytrie4.txt"
 
   describe "readTerms" $ do
     it "returns mytrie1 from mytrie1.txt" $ do
