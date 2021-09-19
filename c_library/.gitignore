@@ -3,7 +3,8 @@ examples/trie_examples
 test/test_tries
 
 # Documentation
-html
+html/
+latex/
 
 # Prerequisites
 *.d
