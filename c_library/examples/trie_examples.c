@@ -49,7 +49,7 @@ int main(void) {
   print_trie(mytrie_augmented);
 
   // read in a trie
-  HsStablePtr mytrie4 = read_terms("../Data/mytrie4.txt");
+  HsStablePtr mytrie4 = read_terms("Data/mytrie4.txt");
   printf("mytrie4 using read_terms:\n");
   print_trie(mytrie4);
 

@@ -30,7 +30,7 @@ void test_get_max_weight(void){
 }
 
 void test_autocomplete_ReturnsEmptyList(void){
-  HsStablePtr trie2 = read_terms("../Data/mytrie2.txt");
+  HsStablePtr trie2 = read_terms("Data/mytrie2.txt");
 
   double weight_array[3] = {-1, -1, -1};
   char* word_array[3] = {NULL, NULL, NULL};
@@ -44,7 +44,7 @@ void test_autocomplete_ReturnsEmptyList(void){
 }
 
 void test_autocomplete_Returns2MatchesWhen3Requested(void){
-  HsStablePtr trie3 = read_terms("../Data/mytrie3.txt");
+  HsStablePtr trie3 = read_terms("Data/mytrie3.txt");
 
   double weight_array[3] = {-1, -1, -1};
   char* word_array[3] = {NULL, NULL, NULL};
@@ -60,7 +60,7 @@ void test_autocomplete_Returns2MatchesWhen3Requested(void){
 }
 
 void test_autocomplete_ReturnsTheCorrectMatches(void){
-  HsStablePtr trie2 = read_terms("../Data/mytrie2.txt");
+  HsStablePtr trie2 = read_terms("Data/mytrie2.txt");
 
   double weight_array[2] = {-1, -1};
   char* word_array[2] = {NULL, NULL};
