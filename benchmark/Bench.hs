@@ -4,17 +4,17 @@ import Criterion.Main
 import Tries
 
 autocompleteEnv = do
-  nasdaq_trie <- readTerms "../Data/nasdaq.txt"
-  wiktionary_trie <- readTerms "../Data/wiktionary.txt"
-  artists_trie <- readTerms "../Data/artists.txt"
-  trademarks_trie <- readTerms "../Data/trademarks.txt"
-  movies_trie <- readTerms "../Data/movies.txt"
+  nasdaq_trie <- readTerms "Data/nasdaq.txt"
+  wiktionary_trie <- readTerms "Data/wiktionary.txt"
+  artists_trie <- readTerms "Data/artists.txt"
+  trademarks_trie <- readTerms "Data/trademarks.txt"
+  movies_trie <- readTerms "Data/movies.txt"
   return (nasdaq_trie, wiktionary_trie,
           artists_trie, trademarks_trie,
           movies_trie)
 
 songsEnv = do
-  songs_trie <- readTerms "../Data/songs.txt"
+  songs_trie <- readTerms "Data/songs.txt"
   return songs_trie
 
 -- Our benchmarks
@@ -23,17 +23,17 @@ main = defaultMain
   [
   bgroup "readTerms" [
                        bench "nasdaq" $
-                       whnfIO (readTerms "../Data/nasdaq.txt"),
+                       whnfIO (readTerms "Data/nasdaq.txt"),
                        bench "wiktionary" $
-                       whnfIO (readTerms "../Data/wiktionary.txt"),
+                       whnfIO (readTerms "Data/wiktionary.txt"),
                        bench "arists" $
-                       whnfIO (readTerms "../Data/artists.txt"),
+                       whnfIO (readTerms "Data/artists.txt"),
                        bench "trademarks" $
-                       whnfIO (readTerms "../Data/trademarks.txt"),
+                       whnfIO (readTerms "Data/trademarks.txt"),
                        bench "movies" $
-                       whnfIO (readTerms "../Data/movies.txt"),
+                       whnfIO (readTerms "Data/movies.txt"),
                        bench "songs" $
-                       whnfIO (readTerms "../Data/songs.txt")
+                       whnfIO (readTerms "Data/songs.txt")
                      ],
 
     env autocompleteEnv $ \ ~(nasdaq_trie,
