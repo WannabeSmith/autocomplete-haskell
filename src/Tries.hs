@@ -1,14 +1,14 @@
 {-# LANGUAGE OverloadedStrings, DeriveGeneric, DeriveAnyClass #-}
 {-|
 Module      : Tries
-Description : An implementation along with functions for working with tries.
+Description : An autocomplete implementation along with functions for working with tries.
 Copyright   : (c) Ian Waudby-Smith, 2019
-License     : GPL-3
-Maintainer  : iwaudbys@andrew.cmu.edu
+License     : BSD 3-Clause
+Maintainer  : iwaudbysmith@gmail.com
 Stability   : experimental
 Portability : POSIX
 
-This module provides an implementation along with functions for working with tries. Tries allow for a fast and scalable implementation of autocomplete.
+This module provides an implementation of autocomplete along with functions for working with tries.
 -}
 
 
