@@ -1,14 +1,14 @@
-# Example usage of `tries.h`
+# C interface to autocomplete-haskell
 
 ## Running examples from the command line
 
-To run the following examples, simply go to the `c_library` directory and run 
+The script [run_examples.sh](run_examples.sh) compiles the Haskell library, organizes to-be-exported FFI functions in a dependencies folder, and compiles the examples file `examples/trie_examples.c`: 
 
-```bash
-$ sh run_examples.sh
+```zsh
+sh run_examples.sh
 ```
 
-### c_library/examples/trie_examples.c
+### `c_library/examples/trie_examples.c`
 
 ```c
 #include <stdio.h>
@@ -89,9 +89,9 @@ int main(void) {
 }
 ```
 
-### Output from the above program:
+### Expected output from the above program:
 
-```
+```zsh
 get_empty_trie():
 EmptyTrie
 
@@ -169,4 +169,33 @@ slowcomplete results:
 (25.000000, ted)
 (14.000000, tea)
 (12.000000, to)
+
+```
+
+## Unit tests
+
+The script [run_tests.sh](run_tests.sh) compiles the Haskell library, organizes to-be-exported FFI functions in a dependencies folder, and compiles the unit test file `test/test_tries.c`: 
+
+```zsh
+sh run_tests.sh
+```
+
+## Documentation (using doxygen)
+
+Documentation for the C interface can be generated using [doxygen](https://www.doxygen.nl/index.html). First, you will need to have doxygen installed. This can likely be found using your OS package manager. For example, using homebrew,
+
+```zsh
+brew install doxygen
+```
+
+Now, simply run doxygen on [doxygen_config](doxygen_config):
+
+```zsh
+doxygen doxygen_config
+```
+
+Finally, open the generated `html/files.html` to see documentation for [src/tries.c](src/tries.c) and [src/tries.h](src/tries.h). This can be done on macOS using the `open` command:
+
+```zsh
+open html/files.html
 ```
