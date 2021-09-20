@@ -182,7 +182,7 @@ sh run_tests.sh
 
 ## Documentation (using doxygen)
 
-Documentation for the C interface can be generated using [doxygen](https://www.doxygen.nl/index.html). First, you will need to have doxygen installed. This can likely be found using your OS package manager. For example, using homebrew,
+Documentation for the C interface can be generated using [doxygen](https://www.doxygen.nl/index.html). First, you will need to have doxygen installed. This can likely be accomplished using your OS package manager. For example, using homebrew,
 
 ```zsh
 brew install doxygen
