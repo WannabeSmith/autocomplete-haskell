@@ -17,11 +17,15 @@ The instructions which follow will rely on [stack](https://docs.haskellstack.org
 
 ## Perform autocomplete from the command line
 
+For this example, we will select the top 3 matches for the prefix "Char" in the database [Data/pokemon.txt](Data/pokemon.txt).
+
 ```zsh
 stack install
 
 ~/.local/bin/autocomplete-haskell-exe Data/pokemon.txt "Char" 3
 ```
+
+Try it out with other data files, prefixes, and values of k!
 
 ## Run unit tests
 
@@ -39,7 +43,7 @@ Benchmarks for running autocomplete on various datasets in [Data](Data) can be f
 stack bench
 ```
 
-## Haddock documentation
+## Documentation (using Haddock)
 
 Documentation for autocomplete-haskell can be generated using [haddock](https://www.haskell.org/haddock/) by running the following:
 
@@ -49,4 +53,4 @@ stack haddock --open autocomplete-haskell
 
 ## C interface
 
-This repository also contains a C interface to the main functions implemented in [Tries.hs]. For more details, see [c_library](c_library).
+This repository also contains a C foreign function interface ([FFI](https://wiki.haskell.org/Foreign_Function_Interface)) to the main functions implemented in [Tries.hs]. For more details, see [c_library](c_library).
