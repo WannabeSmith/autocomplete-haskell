@@ -2,7 +2,7 @@
 
 ## Running examples from the command line
 
-The script [run_examples.sh](run_examples.sh) compiles the Haskell library, organizes to-be-exported FFI functions in a dependencies folder, and compiles the examples file `examples/trie_examples.c`: 
+The script [run_examples.sh](run_examples.sh) compiles the Haskell library, organizes to-be-exported FFI functions in a dependencies folder, and compiles the examples file [examples/trie_examples.c](examples/trie_examples.c):
 
 ```zsh
 sh run_examples.sh
@@ -89,7 +89,7 @@ int main(void) {
 }
 ```
 
-### Expected output from the above program:
+### Expected output from the above C program
 
 ```zsh
 get_empty_trie():
@@ -182,7 +182,7 @@ sh run_tests.sh
 
 ## Documentation (using doxygen)
 
-Documentation for the C interface can be generated using [doxygen](https://www.doxygen.nl/index.html). First, you will need to have doxygen installed. This can likely be found using your OS package manager. For example, using homebrew,
+Documentation for the C interface can be generated using [doxygen](https://www.doxygen.nl/index.html). First, you will need to have doxygen installed. This can likely be accomplished using your OS package manager. For example, using homebrew,
 
 ```zsh
 brew install doxygen

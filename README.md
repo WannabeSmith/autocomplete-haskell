@@ -1,6 +1,6 @@
 # autocomplete-haskell
 
-This repository contains a Haskell implementation of autocomplete with functions for working with the [trie](https://en.wikipedia.org/wiki/Trie) data structure, as well as a [C interface](c_library) to the underlying Haskell implementation.
+This repository contains a Haskell implementation of autocomplete with functions for working with the [trie](https://en.wikipedia.org/wiki/Trie) data structure, as well as a [C foreign function interface](c_library) to the underlying Haskell implementation.
 
 `autocomplete-haskell` was developed as my final project for [36-750: Statistical Computing](https://36-750.github.io/) at Carnegie Mellon University.
 
@@ -40,7 +40,7 @@ Try it out with other data files, prefixes, and values of k!
 
 ## Run unit tests
 
-Haskell unit tests can be found in [`test/Spec.hs`](test/Spec.hs) and can be run using `stack`:
+Haskell unit tests are found in [`test/Spec.hs`](test/Spec.hs) and can be run using `stack`:
 
 ```zsh 
 stack test
@@ -48,7 +48,7 @@ stack test
 
 ## Benchmarks
 
-Benchmarks for running autocomplete on various datasets in [Data](Data) can be found in [`benchmark/Bench.hs`](benchmark/Bench.hs). These can be run using `stack`:
+Benchmarks for running autocomplete on various datasets in [Data](Data) are found in [`benchmark/Bench.hs`](benchmark/Bench.hs). These can be run using `stack`:
 
 ```zsh 
 stack bench
@@ -62,9 +62,9 @@ Documentation for autocomplete-haskell can be generated using [haddock](https://
 stack haddock --open autocomplete-haskell
 ```
 
-## C interface
+## C foreign function interface (FFI)
 
-This repository also contains a C foreign function interface ([FFI](https://wiki.haskell.org/Foreign_Function_Interface)) to the main functions implemented in [Tries.hs]. For more details, see [c_library](c_library).
+This repository also contains a C [FFI](https://wiki.haskell.org/Foreign_Function_Interface) to the main functions implemented in [src/Tries.hs](src/Tries.hs). For more details, see [c_library](c_library).
 
 ## Acknowledgements
 
