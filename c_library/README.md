@@ -2,7 +2,7 @@
 
 ## Running examples from the command line
 
-The script [run_examples.sh](run_examples.sh) compiles the Haskell library, organizes to-be-exported FFI functions in a dependencies folder, and compiles the examples file `examples/trie_examples.c`: 
+The script [run_examples.sh](run_examples.sh) compiles the Haskell library, organizes to-be-exported FFI functions in a dependencies folder, and compiles the examples file [examples/trie_examples.c](examples/trie_examples.c):
 
 ```zsh
 sh run_examples.sh
