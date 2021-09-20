@@ -31,6 +31,11 @@ stack install
 ~/.local/bin/autocomplete-haskell-exe Data/pokemon.txt "Char" 3
 ```
 
+Expected output:
+```zsh
+[(147161.0,"Charizard"),(390.0,"Charmeleon"),(306.0,"Charmander")]
+```
+
 Try it out with other data files, prefixes, and values of k!
 
 ## Run unit tests
