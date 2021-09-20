@@ -8,7 +8,7 @@ Some key files and directories:
 - [src/Tries.hs](src/Tries.hs): The primary tries and autocomplete implementations.
 - [test/Spec.hs](test/Spec.hs): Unit tests.
 - [benchmark/Bench.hs](benchmark/Bench.hs): Benchmarks.
-- [Data](Data): Example strings with weights for performing autocomplete.
+- [Data](Data): Example datasets containing strings with weights for performing autocomplete.
 - [app/Main.hs](app/Main.hs): Implementation of simple command line interface.
 
 ## Dependencies
