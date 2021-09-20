@@ -1,8 +1,27 @@
 # autocomplete-haskell
 
+Haskell implementation of autocomplete with functions for working with the [trie](https://en.wikipedia.org/wiki/Trie#:~:text=In%20computer%20science%2C%20a%20trie,key%2C%20but%20by%20individual%20characters.) data structure. This repository also contains a [C interface](c_library) to the underlying Haskell implementation.
+
+`autocomplete-haskell` was developed as my final project for [36-750: Statistical Computing](https://36-750.github.io/) at Carnegie Mellon University.
+
+Some key files and directories:
+- [src/Tries.hs](src/Tries.hs): The primary tries and autocomplete implementations.
+- [test/Spec.hs](test/Spec.hs): Unit tests.
+- [benchmark/Bench.hs](benchmark/Bench.hs): Benchmarks.
+- [Data](Data): Example strings with weights for performing autocomplete.
+- [app/Main.hs](app/Main.hs): Implementation of simple command line interface.
+
 ## Dependencies
 
-- [stack](https://docs.haskellstack.org/en/stable/README/)
+The instructions which follow will rely on [stack](https://docs.haskellstack.org/en/stable/README/).
+
+## Perform autocomplete from the command line
+
+```zsh
+stack install
+
+~/.local/bin/autocomplete-haskell-exe Data/pokemon.txt "Char" 3
+```
 
 ## Run unit tests
 
@@ -30,4 +49,4 @@ stack haddock --open autocomplete-haskell
 
 ## C interface
 
-See [c_library](c_library)
+This repository also contains a C interface to the main functions implemented in [Tries.hs]. For more details, see [c_library](c_library).
