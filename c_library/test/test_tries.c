@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "tries.h"
-#include "unity.h"
+#include "Unity/src/unity.h"
 
 void setUp(void) {
 }
