@@ -64,4 +64,4 @@ stack haddock --open autocomplete-haskell
 
 ## C interface
 
-This repository also contains a C foreign function interface ([FFI](https://wiki.haskell.org/Foreign_Function_Interface)) to the main functions implemented in [Tries.hs]. For more details, see [c_library](c_library).
+This repository also contains a C foreign function interface ([FFI](https://wiki.haskell.org/Foreign_Function_Interface)) to the main functions implemented in [src/Tries.hs](src/Tries.hs). For more details, see [c_library](c_library).
