@@ -21,6 +21,8 @@ brew install haskell-stack
 
 ## Perform autocomplete from the command line
 
+The file [app/Main.hs](app/Main.hs) implements a command line interface to the `autocomplete` function in [src/Tries.hs](src/Tries.hs). An executable is available after running `stack install`:
+
 For this example, we will select the top 3 matches for the prefix "Char" in the database [Data/pokemon.txt](Data/pokemon.txt).
 
 ```zsh
