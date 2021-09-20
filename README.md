@@ -48,7 +48,7 @@ stack test
 
 ## Benchmarks
 
-Benchmarks for running autocomplete on various datasets in [Data](Data) can be found in [`benchmark/Bench.hs`](benchmark/Bench.hs). These can be run using `stack`:
+Benchmarks for running autocomplete on various datasets in [Data](Data) are found in [`benchmark/Bench.hs`](benchmark/Bench.hs). These can be run using `stack`:
 
 ```zsh 
 stack bench
