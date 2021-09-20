@@ -40,7 +40,7 @@ Try it out with other data files, prefixes, and values of k!
 
 ## Run unit tests
 
-Haskell unit tests can be found in [`test/Spec.hs`](test/Spec.hs) and can be run using `stack`:
+Haskell unit tests are found in [`test/Spec.hs`](test/Spec.hs) and can be run using `stack`:
 
 ```zsh 
 stack test
