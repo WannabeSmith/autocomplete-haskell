@@ -89,7 +89,7 @@ int main(void) {
 }
 ```
 
-### Expected output from the above C program:
+### Expected output from the above C program
 
 ```zsh
 get_empty_trie():
