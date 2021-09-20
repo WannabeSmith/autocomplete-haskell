@@ -1,0 +1,3 @@
+[submodule "c_library/dependencies/Unity"]
+	path = c_library/dependencies/Unity
+	url = https://github.com/ThrowTheSwitch/Unity
