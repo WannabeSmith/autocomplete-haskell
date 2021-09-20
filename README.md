@@ -1,10 +1,10 @@
 # autocomplete-haskell
 
-Haskell implementation of autocomplete with functions for working with the [trie](https://en.wikipedia.org/wiki/Trie#:~:text=In%20computer%20science%2C%20a%20trie,key%2C%20but%20by%20individual%20characters.) data structure. This repository also contains a [C interface](c_library) to the underlying Haskell implementation.
+This repository contains a Haskell implementation of autocomplete with functions for working with the [trie](https://en.wikipedia.org/wiki/Trie) data structure, as well as a [C interface](c_library) to the underlying Haskell implementation.
 
 `autocomplete-haskell` was developed as my final project for [36-750: Statistical Computing](https://36-750.github.io/) at Carnegie Mellon University.
 
-Some key files and directories:
+Some important files and folders:
 - [src/Tries.hs](src/Tries.hs): The primary tries and autocomplete implementations.
 - [test/Spec.hs](test/Spec.hs): Unit tests.
 - [benchmark/Bench.hs](benchmark/Bench.hs): Benchmarks.
@@ -65,3 +65,7 @@ stack haddock --open autocomplete-haskell
 ## C interface
 
 This repository also contains a C foreign function interface ([FFI](https://wiki.haskell.org/Foreign_Function_Interface)) to the main functions implemented in [Tries.hs]. For more details, see [c_library](c_library).
+
+## Acknowledgements
+
+Thanks to [Alex Reinhart](https://www.refsmmat.com/) ([capnrefsmmat](https://github.com/capnrefsmmat)) for many helpful suggestions on improving code/documentation/test quality. 
