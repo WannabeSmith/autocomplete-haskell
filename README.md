@@ -13,7 +13,11 @@ Some key files and directories:
 
 ## Dependencies
 
-The instructions which follow will rely on [stack](https://docs.haskellstack.org/en/stable/README/).
+The instructions which follow will rely on [stack](https://docs.haskellstack.org/en/stable/README/). This can likely be installed using your OS package manager. For example, using Homebrew, 
+
+```zsh
+brew install haskell-stack
+```
 
 ## Perform autocomplete from the command line
 
